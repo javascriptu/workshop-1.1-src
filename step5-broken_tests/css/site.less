@@ -1,0 +1,58 @@
+
+@import "bootstrap/bootstrap.less";
+
+@color : hsl(0,0%,10%);
+@backgroundColor : hsl(0,0,100%);
+@brandColor : hsl(0,0%,15%);
+
+@headerBackground : hsl(222,0%,85%);
+
+.shadow-minor {
+  .box-shadow(1px 1px 4px 0px darken(@backgroundColor,50%));
+}
+
+body {
+  background-color:@backgroundColor;
+  color:@color;
+  padding:2em 0;
+}
+
+#siteHeader {
+  height:100px;
+  #gradient > .vertical(lighten(@headerBackground,5%),darken(@headerBackground,5%));
+  .border-radius();
+  border:1px solid darken(@headerBackground,20%);
+  .shadow-minor;
+  h1 {
+    line-height:100px;
+    font-size:70px;
+    text-align:center;
+    .brand {
+      color:@brandColor;
+    }
+  }
+}
+
+#main {
+  min-height:500px;
+  p {
+    font-size:50px;
+    line-height:50px;
+    text-align:center;
+    margin-top:1em;
+  }
+}
+
+#siteFooter {
+  #gradient > .vertical(lighten(@headerBackground,5%),darken(@headerBackground,5%));
+  .border-radius();
+  border:1px solid darken(@headerBackground,20%);
+  .shadow-minor;
+  text-align:center;
+  height:30px;
+  p {
+    font-size:14px;
+    line-height:30px;
+    color:#000;
+  }
+}
