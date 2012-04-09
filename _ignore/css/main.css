@@ -1,0 +1,27 @@
+body {
+  background: url('../img/bgtile.jpg')
+}
+
+h1 {
+  font-size:80px;
+  line-height:80px;
+  margin:150px 0 20px 0;
+  text-align:center;
+}
+
+p {
+  font-size:40px;
+  line-height:60px;
+  text-align:center;
+}
+
+ol {
+  text-align:left;
+  width:50%;
+  margin-left:30%;
+}
+
+li {
+  font-size:40px;
+  line-height: 40px;
+}
